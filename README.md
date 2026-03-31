@@ -23,7 +23,7 @@ Este é um clone simplificado do jogo Slither.io, desenvolvido para funcionar em
    ```bash
    npm start
    ```
-5. O jogo estará disponível em `http://localhost:3000` ou `http://snake.local` na sua rede local.
+5. O jogo estará disponível em `http://localhost:3000` na sua rede local.
 
 ## Tecnologias Utilizadas
 
@@ -31,5 +31,4 @@ Este é um clone simplificado do jogo Slither.io, desenvolvido para funcionar em
 - **Express**: Servidor web para arquivos estáticos.
 - **ws (WebSocket)**: Comunicação bidirecional de baixa latência.
 - **HTML5 Canvas**: Renderização gráfica no navegador.
-- **bonjour-service**: Anúncio do serviço na rede local via mDNS.
 - **open**: Abertura automática do navegador.

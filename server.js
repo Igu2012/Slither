@@ -193,13 +193,13 @@ function getLocalIPs() {
 
 server.listen(PORT, () => {
     const localIPs = getLocalIPs();
-    console.log('\n' + '⭐'.repeat(25) + '\n   O JOGO ESTÁ NO AR! 🐍\n' + '⭐'.repeat(25));
+    console.log('\n' + ' '.repeat(25) + '\n   O JOGO ESTÁ NO AR! 🐍\n' + ' '.repeat(25));
     console.log(`\nPara jogar no seu PC: http://localhost:${PORT}`);
     if (localIPs.length > 0) {
         console.log('\nPara jogar com amigos ou no celular:');
         localIPs.forEach(ip => console.log(`🔗 http://${ip}:${PORT}`));
     }
-    console.log('\n' + '⭐'.repeat(25) + '\nPressione Ctrl+C para fechar o servidor.\n');
+    console.log('\n' + ' '.repeat(25) + '\nPressione Ctrl+C para fechar o servidor.\n');
     try { const bonjour = new Bonjour(); bonjour.publish({ name: 'snake', type: 'http', port: PORT }); } catch (e) {}
     const url = `http://localhost:${PORT}`;
     open(url).catch(() => { if (process.platform === 'linux') { require('child_process').exec(`xdg-open ${url}`).catch(() => {}); } });
