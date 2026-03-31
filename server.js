@@ -200,7 +200,6 @@ server.listen(PORT, () => {
         localIPs.forEach(ip => console.log(`🔗 http://${ip}:${PORT}`));
     }
     console.log('\n' + ' '.repeat(25) + '\nPressione Ctrl+C para fechar o servidor.\n');
-    try { const bonjour = new Bonjour(); bonjour.publish({ name: 'snake', type: 'http', port: PORT }); } catch (e) {}
     const url = `http://localhost:${PORT}`;
     open(url).catch(() => { if (process.platform === 'linux') { require('child_process').exec(`xdg-open ${url}`).catch(() => {}); } });
 });
