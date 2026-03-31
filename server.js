@@ -3,7 +3,6 @@ const http = require('http');
 const WebSocket = require('ws');
 const path = require('path');
 const os = require('os');
-const { Bonjour } = require('bonjour-service');
 const open = require('open');
 
 const app = express();
