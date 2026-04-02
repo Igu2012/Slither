@@ -23,7 +23,6 @@ Este é um clone simplificado do jogo Slither.io, desenvolvido para funcionar em
    npm start
    ```
 5. O jogo estará disponível em `http://localhost:3000` na sua rede local.
-6. Se estiver usando cloudflare rode `cloudflared tunnel --url http://localhost:3000`
 
 ## Tecnologias Utilizadas
 
